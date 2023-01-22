@@ -12,10 +12,7 @@ document.querySelector(".menu__blur").addEventListener("click", function () {
 });
 
 document.querySelector(".menu__list").addEventListener("click", function (e) {
-  if (
-    e.target.classList.value === "menu__list" ||
-    e.target.classList.value === "menu-select__item"
-  ) {
+  if (e.target.classList.value === "menu__link") {
     document.querySelector(".burger").classList.toggle("open");
     document.querySelector(".header__menu").classList.toggle("open");
   }

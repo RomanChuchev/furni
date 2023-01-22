@@ -30,7 +30,7 @@ $containerPadding: 60;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
 // Брейк-поинты
-$pc: 1400px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$pc: 1199px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
 $tablet: 768px; // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: 320px; // Телефоны
 
@@ -73,22 +73,23 @@ body {
 
 // По брейк-поинтам
 [class*="__container"] {
-  // > 1400
-  @media (min-width: $pc) {
-    max-width: 1384px;
-    padding: 0 30px;
-  }
-
-  // 768 - 1400
-  @media (min-width: $tablet) {
-    max-width: 768px;
-    padding: 0 20px;
-  }
-
   // 320 - 768
   @media (min-width: $mobile) {
-    max-width: 310px;
-    padding: 0 10px;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 0 7px;
+  }
+
+  // 768 - 1199
+  @media (min-width: $tablet) {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  // > 1199
+  @media (min-width: $pc) {
+    max-width: 1424px;
+    padding: 0 50px;
   }
 }
 
