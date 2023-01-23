@@ -1,7 +1,8 @@
 {
-  "name": "gulp-2023",
+  "name": "furni",
   "version": "2.0.0",
-  "description": "Сборка Gulp Webpack Babel",
+  "description": "Adaptive layout furni by Roman Chuchev",
+  "homepage": "https://github.com/RomanChuchev/furni",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -16,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RomanChuchev/gulp-2023"
+    "url": "git+https://github.com/RomanChuchev/furni"
   },
   "keywords": [
     "gulp",
@@ -26,9 +27,8 @@
     "scss",
     "html"
   ],
-  "author": "FLS",
+  "author": "Roman Chuchev",
   "license": "ISC",
-  "homepage": "https://github.com/RomanChuchev/gulp-2023#readme",
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/polyfill": "latest",
