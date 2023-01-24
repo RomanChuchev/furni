@@ -13,6 +13,11 @@
   color: #27302e;
   padding: 31px 53px;
   border: 2px solid #d3be73;
+
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: #c6b166;
+  }
 }
 
 .hero {
@@ -42,6 +47,7 @@
   }
   &__photo {
     min-width: 590px;
+    height: 825px;
   }
   &__description {
     margin-top: 88px;
@@ -85,9 +91,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
+    path {
+      transition: all 0.3s ease-in-out;
+    }
     &:hover {
-      background: #27302e;
+      path {
+        fill: #27302e;
+      }
     }
   }
   &__btn {
