@@ -9,3 +9,5 @@
 #### Запустить сборщик: `$ npm run dev` или `$ gulp`
 
 #### Сборка проекта в режиме `"production"`: `$ npm run build`
+
+## [Live Demo](https://romanchuchev.github.io/furni/)
