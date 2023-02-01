@@ -10,45 +10,39 @@
   }
   &__menu {
   }
+  &__call {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #c6b166;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #c6b16600;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #c6b166;
+    }
+  }
+
   &__phone {
-    margin: -40px -10px -10px;
+    margin: -20px -10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
     a {
-      padding: 10px 10px 30px 10px;
+      padding: 10px 10px 0px 10px;
       font-family: "Raleway";
       font-weight: 500;
       font-size: 1.5rem;
       line-height: 1.75rem;
-      text-align: right;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #27302e;
       transition: all 0.3s ease-in-out;
-    }
-    position: relative;
-
-    &:after {
-      position: absolute;
-      content: "Обратный звонок";
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.375rem;
-      text-align: right;
-      color: #c6b166;
-      bottom: -1.6875rem;
-      right: 0.625rem;
-      transition: all 0.3s ease-in-out;
-      border-bottom: 1px solid #c6b16600;
-      pointer-events: none;
-    }
-
-    cursor: pointer;
-    &:hover {
-      a {
+      cursor: pointer;
+      &:hover {
         color: #c6b166;
-      }
-      &:after {
-        border-bottom: 1px solid #c6b166;
       }
     }
   }
@@ -103,7 +97,7 @@
   display: none;
 }
 
-@media (min-width: 0) and (max-width: $pc) {
+@media (max-width: $pc) {
   .burger-wrapper {
     width: 30px;
     height: 20px;
@@ -205,6 +199,9 @@
       width: clamp(83px, 25.938vw, 124px);
     }
     &__phone {
+      display: none;
+    }
+    &__call {
       display: none;
     }
     &__menu {

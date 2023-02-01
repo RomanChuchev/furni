@@ -4,12 +4,28 @@
   <body>
     <div class="wrapper">
       @@include('html/header.html', {})
-      <main class="page">
+      <main class="page home">
         @@include('html/sections/hero.html', {})
         @@include('html/sections/about.html', {})
+        <div id="popup" class="popup">
+          <div class="popap__area close-popup"></div>
+          <div class="popup__content">
+            <button class="popup__close close-popup">
+              <img src="./images/icons/close.svg" alt="close" />
+            </button>
+            <div id="popup-card" class="popup__card">
+              <div class="popup__title">Обратный вызов</div>
+              <input class="popup__tel" type="tel" id="phone" />
+              <div class="popup__text">
+                Пожалуйста введите ваш номер телефона
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!-- @@include('html/footer.html', {}) -->
     </div>
+
     <script src="js/app.min.js"></script>
   </body>
 </html>

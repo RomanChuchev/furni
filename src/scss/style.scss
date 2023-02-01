@@ -6,9 +6,10 @@
 @import "config/scrollbar";
 @import "config/global";
 @import "config/mixins";
+@import "config/popup";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap");
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap");
 $fontFamily: "Open Sans", sans-serif;
 $fontSize: 16px;
 
@@ -38,7 +39,7 @@ body {
   font-style: normal;
   min-width: 320px;
   background: #f9f9f9;
-
+  scroll-behavior: smooth;
   // Скролл заблокирован
   .lock & {
     overflow: hidden;

@@ -61,7 +61,7 @@ h3 {
   &__offer {
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 1;
   }
   &__photo {
     min-width: 590px;
@@ -270,3 +270,5 @@ h3 {
     }
   }
 }
+
+
