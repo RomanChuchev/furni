@@ -36,11 +36,35 @@ h3 {
   font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on;
   color: #27302e;
   mix-blend-mode: normal;
+
+  @media (max-width: $pc) {
+    font-size: clamp(17px, 5.313vw, 24px);
+    line-height: clamp(20px, 6.25vw, 35px);
+  }
+}
+
+h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 53px;
+  color: #27302e;
+  @media (max-width: $pc) {
+    font-size: clamp(25px, 7.813vw, 45px);
+    line-height: clamp(29px, 9.063vw, 53px);
+  }
+}
+
+.section {
+  margin-bottom: 160px;
+  @media (max-width: $pc) {
+    margin-bottom: clamp(45px, 14.063vw, 160px);
+  }
 }
 
 .hero {
   padding-top: 65px;
-  padding-bottom: 160px;
 
   &__container {
     display: flex;
@@ -127,7 +151,6 @@ h3 {
 
   @media (max-width: $pc) {
     padding-top: 25px;
-    padding-bottom: 45px;
 
     &__content {
       margin-left: 0;
@@ -188,14 +211,6 @@ h3 {
   padding-top: 3.25rem;
 
   &__title {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 53px;
-    color: #27302e;
-    mix-blend-mode: normal;
-
     margin-bottom: 1.875rem;
   }
 
@@ -228,9 +243,6 @@ h3 {
     padding-top: 0;
 
     &__title {
-      font-size: clamp(25px, 7.813vw, 45px);
-      line-height: clamp(29px, 9.063vw, 53px);
-
       margin-bottom: 0.9rem;
     }
 
@@ -264,11 +276,97 @@ h3 {
     }
 
     h3 {
-      font-size: clamp(17px, 5.313vw, 24px);
-      line-height: clamp(20px, 6.25vw, 35px);
       margin-bottom: 0.9rem;
     }
   }
 }
 
+.catalog {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+  }
+  &__social {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    text-align: right;
+    color: #c6b166;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__cards {
+    display: flex;
+    gap: 20px;
+  }
+  &__card {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px 30px;
+    background: #f9f9f9;
 
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-feature-settings: "pnum" on, "lnum" on, "salt" on, "ss01" on, "ss02" on;
+    color: #27302e;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 25px 30px;
+    background: #f9f9f9;
+  }
+  &__name {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #27302e;
+  }
+  &__production {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6a716f;
+  }
+  &__controls {
+  }
+
+  @media (max-width: $pc) {
+    &__social {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__card {
+      display: none;
+
+      &.first {
+        display: block;
+      }
+    }
+  }
+}
