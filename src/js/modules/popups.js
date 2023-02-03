@@ -31,7 +31,6 @@ if (homePage !== null) {
 
   function popupOpen(popup) {
     if (popup && unlock) {
-      console.log(popup);
       const popupActive = document.querySelector(".popup.open");
       if (popupActive) {
         popupClose(popupActive, false);
@@ -100,6 +99,12 @@ if (homePage !== null) {
     }
   });
 
+  document.querySelector("#popup-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const popupActive = document.querySelector(".popup.open");
+    popupClose(popupActive);
+  });
+
   (function () {
     // проверяем поддержку
     if (!Element.prototype.closest) {
@@ -126,4 +131,3 @@ if (homePage !== null) {
     }
   })();
 }
-
