@@ -69,5 +69,8 @@
     "webp-converter": "latest",
     "webpack": "latest",
     "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "cleave.js": "^1.6.0"
   }
 }

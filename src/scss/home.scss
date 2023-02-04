@@ -447,3 +447,101 @@ h2 {
     }
   }
 }
+
+// how-to section
+.how-to {
+  &__title {
+    padding-top: 10px;
+    margin-bottom: 40px;
+  }
+  &__num {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #c6b166;
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__row {
+    display: flex;
+    gap: 12%;
+  }
+  &__column {
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+  &__description {
+    a {
+      cursor: pointer;
+      color: #c6b166;
+      transition: all 0.3s ease-in-out;
+      border-bottom: 1px solid #c6b16600;
+      &:hover {
+        border-bottom: 1px solid #c6b166;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 65px;
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+
+    label {
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: #6a716f;
+    }
+
+    input {
+      background: transparent;
+      border-bottom: 1px solid #d3be73;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 21px;
+      padding: 5px 10px;
+    }
+  }
+
+  &__phone {
+  }
+
+  &__btn {
+  }
+
+  @media (max-width: $pc) {
+    &__row {
+      flex-direction: column;
+    }
+    &__form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    &__group {
+      flex: 100%;
+    }
+
+    &__num {
+      margin-bottom: 7px;
+    }
+    &__subtitle {
+      margin-bottom: 12px;
+    }
+    &__column {
+      margin-bottom: 25px;
+    }
+  }
+}
