@@ -22,14 +22,14 @@
 
   &__input {
     display: flex;
+    flex-direction: column;
   }
 
-  &__tel {
+  &__item {
     display: block;
-    flex: 0 0 65%;
-    max-width: 65%;
+    flex: 0 0 100%;
+    max-width: 100%;
     height: 80px;
-    margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -43,10 +43,10 @@
   }
 
   &__btn {
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 100%;
+    max-width: 100%;
     border-radius: 10px;
-    height: 80px;
+    padding: 20px 53px;
   }
 }
 
@@ -104,14 +104,6 @@
   color: #c6b166;
   transition: all 0.3s ease-in-out;
   margin-bottom: 15px;
-}
-.popup__text {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 1.375rem;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
 }
 
 .popup__close {

@@ -1,7 +1,12 @@
 import Cleave from "cleave.js";
 import "cleave.js/dist/addons/cleave-phone.ru";
 
-const cleave = new Cleave(".how-to__phone", {
+const cleaveHowTo = new Cleave(".how-to__phone", {
+  phone: true,
+  phoneRegionCode: "RU",
+});
+
+const cleavePopup = new Cleave(".input-popup", {
   phone: true,
   phoneRegionCode: "RU",
 });

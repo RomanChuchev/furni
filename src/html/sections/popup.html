@@ -9,7 +9,16 @@
         <label class="popup__title" for="phone">Обратный вызов</label>
         <div class="popup__input">
           <input
-            class="popup__tel"
+            class="popup__item"
+            type="text"
+            name="name"
+            autocomplete="name"
+            placeholder="Роман"
+            required
+          />
+
+          <input
+            class="popup__item input-popup"
             type="tel"
             id="phone"
             autocomplete="tel"
@@ -19,7 +28,6 @@
           <button type="submit" class="btn popup__btn">Отправить</button>
         </div>
       </form>
-      <div class="popup__text">Пожалуйста введите ваш номер телефона</div>
     </div>
   </div>
 </div>

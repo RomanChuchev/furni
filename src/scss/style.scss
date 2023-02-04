@@ -6,7 +6,6 @@
 @import "config/scrollbar";
 @import "config/global";
 @import "config/mixins";
-@import "config/popup";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap");
@@ -96,3 +95,4 @@ body {
 @import "home";
 @import "footer";
 @import "header";
+@import "config/popup";
