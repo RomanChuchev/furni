@@ -217,6 +217,9 @@ h2 {
   &__text {
     max-width: 54rem;
     margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__services {
@@ -318,10 +321,9 @@ h2 {
   &__card {
     position: relative;
     margin-bottom: 20px;
-    flex: 0 0 33.333%;
   }
   &__column {
-    flex: 0 0 33.333%;
+    flex: 0 0 calc(33.333% - 10px);
   }
   &__price {
     position: absolute;
@@ -366,7 +368,7 @@ h2 {
     color: #6a716f;
   }
   &__controls {
-    margin-top: 40px;
+    margin-top: 20px;
     justify-content: end;
     align-items: center;
     display: flex;
