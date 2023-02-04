@@ -1,32 +1,3 @@
-/*Burger Menu*/
-const burger = document.querySelector(".burger");
-const menu = document.querySelector(".header__menu");
-const lockPadding = document.querySelectorAll(".lock-padding");
-const body = document.body;
-let unlock = true;
-const timeout = 300;
-
-document.querySelector(".burger-wrapper").addEventListener("click", () => {
-  toggleBurger();
-});
-
-document.querySelector(".menu__blur").addEventListener("click", () => {
-  toggleBurger();
-});
-
-document.querySelector(".menu__list").addEventListener("click", (e) => {
-  if (e.target.classList.value === "menu__link") {
-    toggleBurger();
-  }
-});
-
-function toggleBurger() {
-  burger.classList.toggle("open");
-  menu.classList.toggle("open");
-
-  burger.classList.contains("open") ? bodyLock() : bodyUnLock();
-}
-
 function bodyLock() {
   const lockPaddingValue =
     window.innerWidth - document.querySelector("body").offsetWidth + "px";
