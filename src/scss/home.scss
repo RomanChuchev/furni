@@ -566,3 +566,47 @@ h2 {
     }
   }
 }
+
+// why
+.why {
+  background-image: url(../images/catalog/5.jpg);
+  background-position: 0% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 185px;
+  padding-bottom: 190px;
+  &__content {
+    padding: 3.75rem 3.125rem;
+    background: #f9f9f9;
+    max-width: 51.25rem;
+    margin-left: 133px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $pc) {
+    background-image: none;
+    padding-top: 45px;
+    padding-bottom: 0;
+    &__content {
+      padding: 0;
+      background: transparent;
+      max-width: 100%;
+      margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
